@@ -6,13 +6,10 @@
 // }
 
 // Way2
-export default function TabButton({ label }) {
-    function handleClick(){
-        console.log("Hello world!"); 
-    }
+export default function TabButton({ label, onSelect }) {
   return (
     <li>
-      <button onClick={handleClick}>{label}</button>
+      <button onClick={onSelect}>{label}</button>
     </li>
   );
 }
@@ -25,3 +22,13 @@ export default function TabButton({ label }) {
 // }
 
 //The children is a special build-in props
+
+
+// function handleSelect(){
+//   console.log("Hello world! -onSelect"); 
+// }
+//   function onSelect({user}){
+//       <li>
+//       <button onClick = {onSelect}>{user.loggedIn = true}</button>
+//       </li>
+//   } 
