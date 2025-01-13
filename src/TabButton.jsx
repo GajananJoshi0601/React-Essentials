@@ -33,3 +33,12 @@ export default function TabButton({ label, onSelect, isSelected }) {
 //       <button onClick = {onSelect}>{user.loggedIn = true}</button>
 //       </li>
 //   } 
+
+// function handleSelect(){
+//   console.log("Hello world! -onSelect"); 
+// }
+//   function onSelect({user}){
+//       <li>
+//       <button onClick = {onSelect}>{user.loggedIn = true}</button>
+//       </li>
+//   } 

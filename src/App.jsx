@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useState } from 'react';
 import { CORE_CONCEPTS } from './data.js';
 import Header from './Header';
 import CoreConcept from './CoreConcept';
