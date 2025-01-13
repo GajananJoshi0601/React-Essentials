@@ -6,10 +6,11 @@
 // }
 
 // Way2
-export default function TabButton({ label, onSelect }) {
+export default function TabButton({ label, onSelect, isSelected }) {
+  console.log('TABUTTON COMPONENT EXECUTING');
   return (
     <li>
-      <button onClick={onSelect}>{label}</button>
+      <button className={isSelected ? 'active' : undefined} onClick={onSelect}>{label}</button>
     </li>
   );
 }
