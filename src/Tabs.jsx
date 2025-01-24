@@ -1,9 +1,11 @@
 import TabButton from "./TabButton";
 
-export default function Tabs(){
-    return<>
-       <menu>
-        <TabButton></TabButton> 
-        </menu>
+// setting ButtonContainer = menu as a default prop value 
+export default function Tabs({children, button, ButtonContainer = 'menu'}){
+    return(
+    <>
+       <ButtonContainer>{button}</ButtonContainer>
+        {children}
     </>
+    );
 }
